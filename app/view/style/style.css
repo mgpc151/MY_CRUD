@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background-color: #111;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    min-height: 100vh;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;   /* centraliza os itens */
+    align-items: center;
+    gap: 16px;
+}
+
+nav form {
+    margin: 15px;                 /* tira a margem padrão do form */
+}
+
+.painel_lista {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.head_lista h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #4a90e2;
+}
+
+h2 {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Campos e botões */
+input {
+    padding: 10px 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+a {
+    color: #4a90e2;
+}
+
+a:hover {
+    color: #357abd;
+}
+
+/* Lista */
+#lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #555;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.tarefas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 5px 15px;
+    border-bottom: 1px solid #555;
+}
+
+.tarefas:last-child {
+    border-bottom: none;
+}
+
+.tarefas span {
+    flex: 1;
+    min-width: 0;
+    font-size: 20px;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-conteudo {
+    background-color: #2b2b2b;
+    color: #fff;
+    width: 100%;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
